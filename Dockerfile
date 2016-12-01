@@ -32,7 +32,7 @@ RUN set -x \
     && curl -SLO "https://gist.github.com/TommyLau/8a5ce4629d027f7884e6/raw/ea2b58dcbf1ca18508a1b99d847c11f1ccb692a2/atlassian-extras-3.1.2.jar" \
     && cd ../atlassian-bundled-plugins/                                         \
     && curl -SLO "https://gist.github.com/TommyLau/8a5ce4629d027f7884e6/raw/f9597f68f2d244022a12551660394088922c04d1/atlassian-universal-plugin-manager-plugin-2.20.6.jar" \
-    && curl -SLO "https://github.com/xinmeng1/ShareFiles/blob/master/mysql-connector-java-5.1.39-bin.jar" \
+    && curl -SLO "https://raw.githubusercontent.com/xinmeng1/ShareFiles/master/mysql-connector-java-5.1.39-bin.jar" \
     && chown -R ${RUN_USER}:${RUN_GROUP} ${JIRA_INSTALL}
 
 # Use the default unprivileged account. This could be considered bad practice
